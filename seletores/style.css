@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+  background-image: linear-gradient(to left, #a68c6d, #bfa98e);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#H1primario {
+  background-color: #7a664f;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px black;
+
+  color: #8c7c4a;
+  text-align: center;
+  text-shadow: 1px 1px 5px #57572cb7;
+}
+
+.subTitulo {
+  color: #7a664f;
+  text-shadow: 1px 1px 3px #61513ff6;
+}
+
+.basico {
+  color: #8c7c4a;
+}
+
+.intermediario {
+  color: #bf3604;
+}
+
+.avancado {
+  color: #038c73;
+}

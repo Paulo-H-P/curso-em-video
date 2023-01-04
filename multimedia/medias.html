@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--doctype informa ao usuario a versão do html que está sendo rendereiza-->
+<html lang="pt-br">
+  <head>
+    <title>Pagina de exemplo estrutura basica</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="fred" />
+    <meta name="description' content="lista de documentos" />
+    <meta name="keywords" content="html5 , css , js" />
+  </head>
+  <body>
+    <h1>Imagem Dinamica</h1>
+    <p>
+      tente abrir esta imagem em diversos dispositivos ou diminuir e aumentar o
+      tamanho da tela
+    </p>
+    <picture>
+      <source
+        media="(max-width:750px)"
+        srcset="imagens_tamanhos/imagem300.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width:1050px)"
+        srcset="imagens_tamanhos/imagem700.png"
+        type="image/png"
+      />
+      <img src="imagens_tamanhos/imagem1000.png" alt="" />
+    </picture>
+    <br />
+    <p>INSERINDO AUDIO</p>
+    <!--MANEIRA AUDIO BASICA-->
+    <audio src="media/SomTesteRock.mp3" controls autoplay></audio>
+    <br />
+    <audio preload="metadata" autoplay controls loop>
+      <source src="media/SomTesteRock.mp3" type="audio/mpeg" />
+      <source src="media/SomTesteRock.mp3" type="audio/ogg" />
+      <source src="media/SomTesteRock.mp3" type="audio/wav" />
+    </audio>
+  </body>
+</html>
