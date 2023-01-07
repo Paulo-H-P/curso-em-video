@@ -1,5 +1,15 @@
 @charset "utf8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root {
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte-inicio: 'Passion One', cursive;
+  --fonte-poema: 'Sriracha', cursive;
+}
+
 * {
   /*zerar margens*/
   margin: 0px;
@@ -10,6 +20,7 @@ html,
 body {
   min-height: 100vh; /*altura minima no maximo*/
   background-color: darkgrey;
+  font-family: var(--fonte-padrao);
 }
 header {
   background-color: black;
@@ -20,9 +31,12 @@ header {
 header > h1 {
   padding-top: 50px; /*distancia superior do texto quanto a caixa*/
   font-variant: small-caps; /*fontes maiusculas com a primeira letra destacaad*/
+  font-family: var(--fonte-inicio);
+  font-size: 7vw; /*ajusta a fonte conforme o tamanho da tela*/
 }
 
 header > p {
+  font-family: ;
   color: white;
 }
 
@@ -37,10 +51,12 @@ a:hover {
 }
 
 section {
+  font-family: var(--fonte-poema);
   padding-top: 10vh;
   padding-bottom: 10vh;
   line-height: 2em; /*espaçamento de linhas dos textos*/
   padding-left: 30px;
+  font-size: 2vw;
 }
 
 section.normal {
@@ -54,7 +70,7 @@ section.imagem {
 }
 
 section.imagem > p {
-  width: 400px; /*largura da caixa*/
+  display: inline-block; /*caixa vai se ajustando conforme o conteudo interno*/
   background-color: rgba(0, 0, 0, 0.318);
 }
 
