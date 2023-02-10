@@ -8,6 +8,7 @@ paineis.forEach(painel => {
 });
 
 function removeActiveClass() {
-  paineis.forEach(painel => {});
-  painel.classList.remove('active');
+  paineis.forEach(painel => {
+    painel.classList.remove('active');
+  });
 }
